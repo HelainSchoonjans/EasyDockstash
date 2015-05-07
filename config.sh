@@ -110,7 +110,7 @@ output{\
 			codec => $RABBITMQ_CODEC # codec (optional), default: \"plain\"\
 			durable => $RABBITMQ_DURABLE # boolean (optional), default: true\
 			exchange => $RABBITMQ_EXCHANGE # string (required)\
-			exchange_type => $RABBITMQ_EXCHANGE_TYPE # string, one of [\"fanout\", \"direct\", \"topic\"] (required) <
+			exchange_type => $RABBITMQ_EXCHANGE_TYPE # string, one of [\"fanout\", \"direct\", \"topic\"] (required)\
 			host => $RABBITMQ_HOST # string (required)\
 			key => $RABBITMQ_KEY # string (optional), default: \"logstash\"\
 			password => $RABBITMQ_PASSWORD # password (optional), default: \"guest\"\
