@@ -6,27 +6,27 @@
 #LOG4J STUFF
 if [ -z $LOG4J_ADD_FIELD ];
 then
-	LOG4J_ADD_FIELD = "{}"
+	LOG4J_ADD_FIELD="{}"
 fi
 if [ -z $LOG4J_CODEC ];
 then
-	LOG4J_CODEC = "\"plain\""
+	LOG4J_CODEC="\"plain\""
 fi
 if [ -z $LOG4J_DATA_TIMEOUT ];
 then
-	LOG4J_DATA_TIMEOUT = "5"
+	LOG4J_DATA_TIMEOUT="5"
 fi
 if [ -z $LOG4J_HOST ];
 then
-	LOG4J_HOST = "\"0.0.0.0\""
+	LOG4J_HOST="\"0.0.0.0\""
 fi
 if [ -z $LOG4J_MODE ];
 then
-	LOG4J_MODE = "\"server\""
+	LOG4J_MODE="\"server\""
 fi
 if [ -z $LOG4J_PORT ];
 then
-	LOG4J_PORT = "4560"
+	LOG4J_PORT="4560"
 fi
 
 
@@ -35,68 +35,68 @@ fi
 #RABBITMQ STUFF
 if [ -z $RABBITMQ_CODEC ];
 then
-	RABBITMQ_CODEC = "\"plain\""
+	RABBITMQ_CODEC="\"plain\""
 fi
 if [ -z $RABBITMQ_DURABLE ];
 then
-	RABBITMQ_DURABLE = "true"
+	RABBITMQ_DURABLE="true"
 fi
 if [ -z $RABBITMQ_EXCHANGE ];
 then
-	RABBITMQ_EXCHANGE = ""
+	RABBITMQ_EXCHANGE=""
 	exit 1
 else
 	echo "RABBITMQ_EXCHANGE missing"
 fi
 if [ -z $RABBITMQ_EXCHANGE_TYPE ];
 then
-	RABBITMQ_EXCHANGE_TYPE = ""
+	RABBITMQ_EXCHANGE_TYPE=""
 	exit 1
 else
 	echo "RABBITMQ_EXCHANGE_TYPE missing"
 fi
 if [ -z $RABBITMQ_HOST ];
 then
-	RABBITMQ_HOST = ""
+	RABBITMQ_HOST=""
 	exit 1
 else
 	echo "RABBITMQ_HOST missing"
 fi
 if [ -z $RABBITMQ_KEY ];
 then
-	RABBITMQ_KEY = "\"logstash\"" # should be changed
+	RABBITMQ_KEY="\"logstash\"" # should be changed
 fi
 if [ -z $RABBITMQ_PASSWORD ];
 then
-	RABBITMQ_PASSWORD = "\"guest\"" # should be changed
+	RABBITMQ_PASSWORD="\"guest\"" # should be changed
 fi
 if [ -z $RABBITMQ_PERSISTENT ];
 then
-	RABBITMQ_PERSISTENT = "true"
+	RABBITMQ_PERSISTENT="true"
 fi
 if [ -z $RABBITMQ_PORT ];
 then
-	RABBITMQ_PORT = "5672"
+	RABBITMQ_PORT="5672"
 fi
 if [ -z $RABBITMQ_SSL ];
 then
-	RABBITMQ_SSL = "false"
+	RABBITMQ_SSL="false"
 fi
 if [ -z $RABBITMQ_USER ];
 then
-	RABBITMQ_USER = "\"guest\"" #should be changed
+	RABBITMQ_USER="\"guest\"" #should be changed
 fi
 if [ -z $RABBITMQ_VERIFY_SSL ];
 then
-	RABBITMQ_VERIFY_SSL = "false"
+	RABBITMQ_VERIFY_SSL="false"
 fi
 if [ -z $RABBITMQ_VHOST ];
 then
-	RABBITMQ_VHOST = "\"/\""
+	RABBITMQ_VHOST="\"/\""
 fi
 if [ -z $RABBITMQ_WORKERS ];
 then
-	RABBITMQ_WORKERS = "1"
+	RABBITMQ_WORKERS="1"
 fi
 
 logstash agent -e "\
