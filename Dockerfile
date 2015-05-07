@@ -1,3 +1,3 @@
 FROM logstash
 MAINTAINER Helain Schoonjans
-ADD config.sh
+ADD config.sh /logstash/
