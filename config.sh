@@ -43,24 +43,18 @@ then
 fi
 if [ -z $RABBITMQ_EXCHANGE ];
 then
-	RABBITMQ_EXCHANGE=""
-	exit 1
-else
 	echo "RABBITMQ_EXCHANGE missing"
+	exit 1
 fi
 if [ -z $RABBITMQ_EXCHANGE_TYPE ];
 then
-	RABBITMQ_EXCHANGE_TYPE=""
-	exit 1
-else
 	echo "RABBITMQ_EXCHANGE_TYPE missing"
+	exit 1
 fi
 if [ -z $RABBITMQ_HOST ];
 then
-	RABBITMQ_HOST=""
-	exit 1
-else
 	echo "RABBITMQ_HOST missing"
+	exit 1
 fi
 if [ -z $RABBITMQ_KEY ];
 then
