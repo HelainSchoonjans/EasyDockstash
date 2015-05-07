@@ -4,27 +4,27 @@
 # the parameters are comes from the environment variables or use default values
 
 #LOG4J STUFF
-If [ -z $LOG4J_ADD_FIELD ]
+if [ -z $LOG4J_ADD_FIELD ];
 then
 	LOG4J_ADD_FIELD = "{}"
 fi
-If [ -z $LOG4J_CODEC ]
+if [ -z $LOG4J_CODEC ];
 then
 	LOG4J_CODEC = "\"plain\""
 fi
-If [ -z $LOG4J_DATA_TIMEOUT ]
+if [ -z $LOG4J_DATA_TIMEOUT ];
 then
 	LOG4J_DATA_TIMEOUT = "5"
 fi
-If [ -z $LOG4J_HOST ]
+if [ -z $LOG4J_HOST ];
 then
 	LOG4J_HOST = "\"0.0.0.0\""
 fi
-If [ -z $LOG4J_MODE ]
+if [ -z $LOG4J_MODE ];
 then
 	LOG4J_MODE = "\"server\""
 fi
-If [ -z $LOG4J_PORT ]
+if [ -z $LOG4J_PORT ];
 then
 	LOG4J_PORT = "4560"
 fi
@@ -33,68 +33,68 @@ fi
 
 
 #RABBITMQ STUFF
-If [ -z $RABBITMQ_CODEC ]
+if [ -z $RABBITMQ_CODEC ];
 then
 	RABBITMQ_CODEC = "\"plain\""
 fi
-If [ -z $RABBITMQ_DURABLE ]
+if [ -z $RABBITMQ_DURABLE ];
 then
 	RABBITMQ_DURABLE = "true"
 fi
-If [ -z $RABBITMQ_EXCHANGE ]
+if [ -z $RABBITMQ_EXCHANGE ];
 then
 	RABBITMQ_EXCHANGE = ""
 	exit 1
 else
 	echo "RABBITMQ_EXCHANGE missing"
 fi
-If [ -z $RABBITMQ_EXCHANGE_TYPE ]
+if [ -z $RABBITMQ_EXCHANGE_TYPE ];
 then
 	RABBITMQ_EXCHANGE_TYPE = ""
 	exit 1
 else
 	echo "RABBITMQ_EXCHANGE_TYPE missing"
 fi
-If [ -z $RABBITMQ_HOST ]
+if [ -z $RABBITMQ_HOST ];
 then
 	RABBITMQ_HOST = ""
 	exit 1
 else
 	echo "RABBITMQ_HOST missing"
 fi
-If [ -z $RABBITMQ_KEY ]
+if [ -z $RABBITMQ_KEY ];
 then
 	RABBITMQ_KEY = "\"logstash\"" # should be changed
 fi
-If [ -z $RABBITMQ_PASSWORD ]
+if [ -z $RABBITMQ_PASSWORD ];
 then
 	RABBITMQ_PASSWORD = "\"guest\"" # should be changed
 fi
-If [ -z $RABBITMQ_PERSISTENT ]
+if [ -z $RABBITMQ_PERSISTENT ];
 then
 	RABBITMQ_PERSISTENT = "true"
 fi
-If [ -z $RABBITMQ_PORT ]
+if [ -z $RABBITMQ_PORT ];
 then
 	RABBITMQ_PORT = "5672"
 fi
-If [ -z $RABBITMQ_SSL ]
+if [ -z $RABBITMQ_SSL ];
 then
 	RABBITMQ_SSL = "false"
 fi
-If [ -z $RABBITMQ_USER ]
+if [ -z $RABBITMQ_USER ];
 then
 	RABBITMQ_USER = "\"guest\"" #should be changed
 fi
-If [ -z $RABBITMQ_VERIFY_SSL ]
+if [ -z $RABBITMQ_VERIFY_SSL ];
 then
 	RABBITMQ_VERIFY_SSL = "false"
 fi
-If [ -z $RABBITMQ_VHOST ]
+if [ -z $RABBITMQ_VHOST ];
 then
 	RABBITMQ_VHOST = "\"/\""
 fi
-If [ -z $RABBITMQ_WORKERS ]
+if [ -z $RABBITMQ_WORKERS ];
 then
 	RABBITMQ_WORKERS = "1"
 fi
