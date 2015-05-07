@@ -90,9 +90,7 @@ then
 	RABBITMQ_WORKERS="1"
 fi
 
-echo "--------------------
-GENERATING THE CONFIG FILE...
---------------------"
+echo "GENERATING THE CONFIG FILE..."
 echo "input {
 	   log4j {
 		add_field => $LOG4J_ADD_FIELD # hash (optional), default: {}
@@ -122,9 +120,7 @@ output{
 	}
 }" > logstash/config.conf
 
-echo "--------------------
-LAUNCHING LOGSTASH
---------------------"
+echo "LAUNCHING LOGSTASH."
 
 if [ -z $DEBUG ];
 then
